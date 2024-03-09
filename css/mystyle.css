@@ -1,0 +1,320 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin:0;
+  background-color: #929292;
+
+}
+
+ul.naveg {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0px;
+  background-color: #131212;
+  width: 100%;
+  font-weight: bold;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+ul.naveg li.logcir {
+  float: left;
+  margin: 1px;
+  margin-left: 80px;
+}
+
+ul.naveg li {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  left:-30px
+  
+}
+
+
+ul.naveg li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+ul.naveg li a:hover:not(.active) {
+  background-color: #111;
+  overflow: visible;
+}
+.active {
+  background-color: #292b29;
+  overflow: visible;
+}
+
+/*----------------------Menu desplegable--------------------------------*/
+
+ul.naveg li.robb .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+ul.naveg li.robb .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+ul.naveg li.robb .dropdown-content {
+  color: rgb(47, 66, 241);
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(92, 80, 80);
+  z-index: 1;
+  left: -50px
+}
+
+ul.naveg li.robb .dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+ul.naveg li.robb .dropdown-content a:hover {
+  background-color: #a89999
+  
+
+}
+
+ul.naveg li.robb  div.dropdown:hover div.dropdown-content {
+  display: block;
+  background-color: #201f1f;
+  color: rgb(0, 0, 0);
+}
+
+ul.naveg li.robb .dropdown:hover .dropbtn {
+  background-color: #358d35;
+}
+
+
+
+.dropdown2 {
+  height: 50px;
+  
+
+}
+
+
+
+.banderedo {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin-top: -5px;
+}
+
+.repobande {
+  display: none;
+  background-color: rgb(211, 210, 210);
+  right: 1%;
+  position: absolute;
+}
+.repobande a {
+  color: black !important;
+}
+
+.repobande a:hover {
+  background-color: rgb(139, 139, 139) !important;
+}
+
+.dropdown2:hover .repobande{
+  display: block;
+  background-color: rgb(206, 206, 206);
+}
+
+
+
+@media screen and (max-width:600px){
+  .naveg  .soporte, .naveg  .registrar, .naveg .active {
+    display: none;
+  }
+  
+}
+
+.bandera {
+  float: right;
+  float: none;
+  margin-right: 80px;
+}
+
+
+
+
+
+
+/* Create three unequal columns that floats next to each other */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.column {
+  float: let;
+  padding: 10px;
+  margin-left: 20px;
+}
+.column.side .pricol {
+  background-color:#1ABC9C;
+  height: 800px;
+}
+
+ul.depart {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:#1ABC9C;
+  
+}
+ul.depart li {
+  border-bottom: 2px solid #293026;
+  z-index: -1;
+}
+
+ul.depart li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+ul.depart li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+.column.side .izqui {
+  background-color: #1ABC9C;
+  height: 760px;
+  padding: 20px;
+  
+}
+
+.column.side .izqui p {
+  border: 2px solid rgb(201, 201, 201);
+  padding: 10px;
+  text-align: justify;
+}
+
+/* Middle column */
+.column.middle {
+  width: 40%;
+  
+}
+
+.column.middle div h3 {
+  scroll-margin-top: 10%;
+}
+
+.column.middle .listg {
+  background-color: #1ABC9C;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 800px;
+  overflow: auto;
+  scrollbar-color: #14141d #f0e9f8;
+  scrollbar-width: thin;
+}
+.column.middle .listg li{
+  background-color: #afbdaf;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.column.middle .listg div ul li a{
+  text-decoration: none;
+  display: block;
+}
+
+#fisic {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 90%;
+  }
+  .column.side .pricol {
+    display: none;
+  }
+  .row .column .ubcid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .column.side, .column.middle {
+    width: 90%;
+  }
+
+
+}
+
+
+/* Style the footer */
+.piecera1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  
+}
+
+.piecera1 .foo1 {
+width: 250px;
+float: left;
+background-color: #f1f1f1;
+margin-left: 10%;
+margin-bottom: 10px;
+}
+
+.piecera1 .foo1 .social1 {
+float: left;
+margin-right: 10px;
+
+}
+
+
+.piecera1 .iconow1{
+width: 30px;
+height: 30px;
+
+}
+
