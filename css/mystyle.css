@@ -257,11 +257,16 @@ ul.depart li a:hover {
   scroll-margin-top: 10%;
 }
 
+.column.middle .listg ul {
+  padding-inline-start: 0;
+  padding-left: 0;
+}
+
 .column.middle .listg {
   background-color: #1ABC9C;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 ; 
   text-align: center;
   height: 800px;
   overflow: auto;
@@ -271,8 +276,14 @@ ul.depart li a:hover {
 .column.middle .listg li{
   background-color: #afbdaf;
   list-style-type: none;
-  margin: 10px;
-  padding: 10px;
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .column.middle .listg div ul li a{
