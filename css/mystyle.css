@@ -169,7 +169,7 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
 }
 
 .column {
-  float: let;
+  float: left;
   padding: 10px;
   margin-left: 20px;
 }
