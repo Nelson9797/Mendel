@@ -146,7 +146,9 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
   .naveg  .soporte, .naveg  .registrar, .naveg .active {
     display: none;
   }
-  
+  .logcir {
+    display: none;
+  }
 }
 
 .bandera {
