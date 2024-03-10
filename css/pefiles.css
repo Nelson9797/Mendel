@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 700px) {
   .fresa {
-      width: 100%;
+      display: none;
   }
 }
 /*.arriba {
