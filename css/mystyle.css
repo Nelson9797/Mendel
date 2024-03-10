@@ -27,6 +27,7 @@ ul.naveg li.logcir {
 
 .logcir.textalter {
   display: none;
+  padding-top: 10px;
 }
 
 ul.naveg li {
@@ -156,6 +157,7 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
 
   .logcir.textalter {
     display: block;
+    margin-top: 10px;
     color: rgb(58, 140, 218);
     margin-left: 0;
   }
