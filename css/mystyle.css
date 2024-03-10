@@ -197,7 +197,6 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
 .column {
   float: left;
   padding: 10px;
-  margin-left: 20px;
 }
 .column.side .pricol {
   background-color:#1ABC9C;
@@ -295,7 +294,7 @@ ul.depart li a:hover {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
-    width: 90%;
+    width: 50%;
   }
   .column.side .pricol {
     display: none;
@@ -303,6 +302,7 @@ ul.depart li a:hover {
   .row .column .ubcid {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 960px) {
