@@ -25,6 +25,10 @@ ul.naveg li.logcir {
   margin-left: 80px;
 }
 
+.logcir.textalter {
+  display: none;
+}
+
 ul.naveg li {
   float: right;
   margin-right: 20px;
@@ -147,6 +151,19 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
     display: none;
   }
   .logcir {
+    display: none;
+  }
+
+  .logcir.textalter {
+    display: block;
+    color: rgb(58, 140, 218);
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width:378px){
+
+  .logcir.textalter {
     display: none;
   }
 }
