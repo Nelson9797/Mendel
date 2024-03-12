@@ -1,5 +1,5 @@
 .body2 {
-  background: linear-gradient(180deg, rgba(0, 157, 255, 0.829) 0%, rgba(224, 45, 90, 0) 70%), url(./images/Lima.jpeg) no-repeat fixed;
+  background: linear-gradient(180deg, rgba(0, 157, 255, 0.829) 0%, rgba(224, 45, 90, 0) 70%), url(/images/Lima.jpeg) no-repeat fixed;
   background-attachment: fixed;
   background-size: cover;
 
