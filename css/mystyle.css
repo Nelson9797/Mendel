@@ -4,7 +4,7 @@
 
 body {
   margin:0;
-  background-color: #929292;
+  background-color: #dfdfdf;
 
 }
 
@@ -12,7 +12,7 @@ ul.naveg {
   list-style-type: none;
   margin-top: 0;
   padding: 0px;
-  background-color: #000;
+  background-color: #10004f;
   width: 100%;
   font-weight: bold;
   height: 100px;
@@ -22,7 +22,7 @@ ul.naveg {
 ul.naveg li.logcir {
   float: left;
   margin: 1px;
-  margin-left: 80px;
+  margin-left: 3%;
 }
 
 .logcir.textalter {
@@ -49,8 +49,7 @@ ul.naveg li a {
 }
 
 ul.naveg li a:hover:not(.active) {
-  background-color: #000;
-  overflow: visible;
+  border-bottom: 2px solid #10004f;
 }
 .active {
   background-color: #292b29;
@@ -199,7 +198,7 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
   padding: 10px;
 }
 .column.side .pricol {
-  background-color:#1ABC9C;
+  background-color:#fff;
   height: 800px;
 }
 
@@ -208,7 +207,7 @@ ul.depart {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color:#1ABC9C;
+  background-color:#fff;
   
 }
 ul.depart li {
@@ -235,18 +234,46 @@ ul.depart li a:hover {
 }
 
 .column.side .izqui {
-  background-color: #1ABC9C;
+  background-color: #fff;
   height: 760px;
   padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   
 }
 
-.column.side .izqui p {
-  border: 2px solid rgb(201, 201, 201);
-  padding: 10px;
-  text-align: justify;
+div.galle {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
 }
 
+.column.side .izqui .galle .galle1 {
+  overflow: hidden;
+}
+
+.column.side .izqui .galle .galle1 img{
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  display: block;
+  margin-bottom: 5px;
+
+}
+
+.column.side .izqui .galle .galle1 img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:960px) {
+  .column.side .izqui img {
+    height: 300px;
+
+  }
+  
+}
 /* Middle column */
 .column.middle {
   width: 40%;
@@ -263,7 +290,7 @@ ul.depart li a:hover {
 }
 
 .column.middle .listg {
-  background-color: #1ABC9C;
+  background-color: #fff;
   list-style-type: none;
   margin: 0;
   padding: 0 ; 
@@ -274,15 +301,17 @@ ul.depart li a:hover {
   scrollbar-width: thin;
 }
 .column.middle .listg li{
-  background-color: #afbdaf;
+  background-color: #fff;
   list-style-type: none;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
   display: block;
   width: 80%;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px;
 
 }
 
