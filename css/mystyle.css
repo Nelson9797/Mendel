@@ -45,27 +45,27 @@ ul.naveg li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: all 0.3s ease;
 
 }
 
-ul.naveg li a:hover:not(.active) {
-  border-bottom: 2px solid #10004f;
-}
-.active {
-  background-color: #292b29;
+ul.naveg li .df {
   overflow: visible;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
+
+
+
+
 
 /*----------------------Menu desplegable--------------------------------*/
 
 ul.naveg li.robb .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  margin-bottom: 10px;
+
 }
 
 ul.naveg li.robb .dropdown {
@@ -82,14 +82,14 @@ ul.naveg li.robb .dropdown-content {
   box-shadow: 0px 8px 16px 0px rgb(92, 80, 80);
   z-index: 1;
   left: -50px
+
 }
 
 ul.naveg li.robb .dropdown-content a {
   color: rgb(0, 0, 0);
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
-  background-color: rgb(255, 255, 255);
+  background-color: #ccc;
 }
 
 ul.naveg li.robb .dropdown-content a:hover {
@@ -104,17 +104,47 @@ ul.naveg li.robb  div.dropdown:hover div.dropdown-content {
   color: rgb(0, 0, 0);
 }
 
-ul.naveg li.robb .dropdown:hover .dropbtn {
-  background-color: #358d35;
+.naveg .df {
+  overflow: visible;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding: 8px ;
+  margin-top: 15px;
+} 
+
+.naveg .df:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+
 }
 
+ul.naveg li.robb .dropdown .dropbtn {
+  overflow: visible;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding: 5.5px ;
+  margin-top: 15px;
+}
 
+ul.naveg li.robb .dropdown:hover .dropbtn {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+
+}
 
 .dropdown2 {
   height: 50px;
   
 
 }
+
+.sila {
+  display: inline-block; 
+  width: 1em;
+  height: auto;
+  transform: rotate(-90deg);
+}
+
 
 
 
@@ -130,6 +160,7 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
   background-color: rgb(211, 210, 210);
   right: 1%;
   position: absolute;
+  top: 70px;
 }
 .repobande a {
   color: black !important;
@@ -160,10 +191,7 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
     margin-left: 0;
   }
   .dropbtn {
-    background-color: black !important;
     text-transform: uppercase;
-    color: rgb(58, 140, 218) !important;
-    font-weight: bold;
   }
 }
 
