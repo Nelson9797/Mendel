@@ -144,3 +144,13 @@ function showSlides(n) {
 
 
 
+
+/* Para que el avión pase de un lado a otro */
+
+
+
+
+
+
+
+

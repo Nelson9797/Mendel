@@ -8,6 +8,11 @@ body {
 
 }
 
+
+
+
+
+
 ul.naveg {
   list-style-type: none;
   margin-top: 0;
@@ -150,9 +155,9 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
 
 .banderedo {
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  margin-top: -5px;
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
 }
 
 .repobande {

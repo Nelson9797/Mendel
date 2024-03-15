@@ -5,6 +5,9 @@
 
 }
 
+.naveg .active {
+  background-color: #10004f ;
+}
 
 .naveg {
     position: relative;
