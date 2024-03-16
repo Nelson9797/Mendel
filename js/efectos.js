@@ -147,7 +147,37 @@ function showSlides(n) {
 
 /* Para que el avión pase de un lado a otro */
 
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  elem.style.width = "50px";
+  elem.style.height = "50px";
+  elem.style.bottom = "0px";
+  elem.style.left = "0px";
 
+
+  id = setInterval(frame,7);
+  function frame() {
+    const maxPos = window.innerHeight - 50;
+    if (pos >= maxPos) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.bottom = pos + "px"; 
+      let horizontalMode = pos*2.5;
+      elem.style.left=horizontalMode + "px";
+      if (pos > window.innerHeight - 100) { 
+        let overflow = pos - (window.innerHeight - 100);
+        let newSize = 50 - overflow;
+        if (newSize < 0) newSize = 0;
+        elem.style.width = newSize + "px";
+        elem.style.height = newSize + "px";
+      }
+    }
+  }
+}
 
 
 

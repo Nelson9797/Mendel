@@ -5,7 +5,7 @@
 body {
   margin:0;
   background-color: #dfdfdf;
-
+  position: relative;
 }
 
 
@@ -417,3 +417,24 @@ height: 30px;
 
 }
 
+/* Estilos para el avión en movimiento*/
+.avion {
+  margin-top: 2vh;
+  position: fixed;
+  z-index: 10;
+  bottom: 50vh;
+  left: 1vw;
+}
+
+.imageavion {
+  width: 200px;
+}
+
+#animate {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  margin-bottom: 17vh;
+  bottom: 0;
+  left: 1.5vw;
+}
