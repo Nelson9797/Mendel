@@ -353,6 +353,20 @@ div.galle {
   display: block;
 }
 
+.column.middle .listg div ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.listg div ul li img {
+  margin-left: 40px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+}
+
 #fisic {
   text-align: center;
 }
