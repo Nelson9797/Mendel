@@ -295,6 +295,15 @@ div.galle {
 }
 
 @media screen and (max-width:960px) {
+  .column.side .izqui {
+    background-color: #fff;
+    padding: 20px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+  }
   .column.side .izqui img {
     height: 300px;
 
@@ -390,6 +399,7 @@ div.galle {
   .column.side, .column.middle {
     width: 90%;
   }
+
 
 
 }
