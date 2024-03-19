@@ -25,15 +25,12 @@ ul.naveg {
 }
 
 ul.naveg li.logcir {
+  height: 60px;
   float: left;
   margin: 1px;
   margin-left: 3%;
 }
 
-.logcir.textalter {
-  display: none;
-  padding-top: 10px;
-}
 
 ul.naveg li {
   float: right;
@@ -186,26 +183,23 @@ ul.naveg li.robb .dropdown:hover .dropbtn {
   .naveg  .soporte, .naveg  .registrar, .naveg .active {
     display: none;
   }
-  .logcir {
-    display: none;
+  ul.naveg li.logcir {
+    height: 20px;
+    width: 30px ;
+    margin-left: 0 ;
   }
 
-  .logcir.textalter {
-    display: block;
-    color: rgb(58, 140, 218);
-    margin-left: 0;
+  ul.naveg li.logcir img {
+    margin-top: 15px;
+    height: 40px;
+    align-items: center;
   }
+
   .dropbtn {
     text-transform: uppercase;
   }
 }
 
-@media screen and (max-width:378px){
-
-  .logcir.textalter {
-    display: none;
-  }
-}
 
 .bandera {
   float: right;
